@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+      function(position) {
+         let locx=  position.coords.latitude
+         let locy= position.coords.longitude
+
+
+
+
+console.log(locx);
+console.log("hos")
+
+      },
+      function(error) {
+       locx=  29.91667;
+        locy= 31.2
+      console.log(locx)
+      console.log("gada")
+      }
+      
+  );}
+
+    </script>
+</body>
+</html>
